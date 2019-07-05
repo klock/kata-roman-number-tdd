@@ -49,4 +49,8 @@ export class RomanNumeral {
     static isLess(numeral1: RomanNumeralEnum, numeral2: RomanNumeralEnum): boolean {
         return RomanNumeral.fromNumeralEnum(numeral1).value < RomanNumeral.fromNumeralEnum(numeral2).value;
     }
+
+    isLess(numeral2: RomanNumeral): boolean {
+        return this.value < numeral2.value;
+    }
 }
