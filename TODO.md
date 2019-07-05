@@ -2,6 +2,8 @@
 
 
 ## Translation of a Roman number
+- ~~get a RomanNumeral from the relative char~~
+- ~~define if RomanNumeral is greater than another one~~
 
 
 ## Translation to a Roman number
