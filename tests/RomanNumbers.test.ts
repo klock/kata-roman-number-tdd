@@ -17,4 +17,12 @@ describe('RomanNumbers', () => {
     it('read \'III\'', () => {
         expect(RomanNumbers.read('III')).toBe(3);
     });
+
+    it('read \'IV\'', () => {
+        expect(RomanNumbers.read('IV')).toBe(4);
+    });
+
+    it('read \'VI\'', () => {
+        expect(RomanNumbers.read('VI')).toBe(6);
+    });
 });

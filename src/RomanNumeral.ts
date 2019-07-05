@@ -26,6 +26,10 @@ export class RomanNumeral {
         RomanNumeral._M,
     ];
 
+    public static fromNumeralChar(numeralChar: string): RomanNumeral {
+        return RomanNumeral.fromNumeralEnum(<RomanNumeralEnum>numeralChar);
+    }
+
     public static fromNumeralEnum(numeralEnum: RomanNumeralEnum): RomanNumeral {
         switch (numeralEnum) {
             case RomanNumeralEnum.I: return RomanNumeral._I;
