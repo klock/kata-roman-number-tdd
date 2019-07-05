@@ -1,9 +1,11 @@
+import { RomanNumeral } from './RomanNumeral';
+import { RomanNumeralEnum } from './RomanNumeralEnum';
+
 export class RomanNumbers {
-    static read(roman: string) {
+
+    static read(roman: string): number {
         if (roman.length === 1) {
-            if (roman === 'I') {
-                return 1;
-            }
+            return RomanNumeral.fromNumeralEnum(<RomanNumeralEnum>roman).value;
         } else {
             let result = 0;
             for (let char of roman) {

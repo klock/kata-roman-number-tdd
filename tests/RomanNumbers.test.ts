@@ -1,8 +1,13 @@
 import { RomanNumbers } from '../src/RomanNumbers';
+import { RomanNumeral } from '../src/RomanNumeral';
 
 describe('RomanNumbers', () => {
-    it('read \'I\'', () => {
-        expect(RomanNumbers.read('I')).toBe(1);
+    describe('read one char:', () => {
+        for (let numeral of RomanNumeral.RomanNumerals) {
+            it(numeral.numeralEnum, () => {
+                expect(RomanNumbers.read(numeral.numeralEnum)).toBe(numeral.value);
+            });
+        }
     });
 
     it('read \'II\'', () => {
